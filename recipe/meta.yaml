@@ -10,7 +10,7 @@ source:
   sha256: 0bc5a4a0ee22689a863090993e0054485030847d0e9884afa1592ca388cccf4a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps . -vv
 
@@ -40,3 +40,4 @@ extra:
   recipe-maintainers:
     - ericcina
     - sodre
+    - consideRatio

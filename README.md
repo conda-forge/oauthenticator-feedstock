@@ -118,6 +118,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@consideRatio](https://github.com/consideRatio/)
 * [@ericcina](https://github.com/ericcina/)
 * [@sodre](https://github.com/sodre/)
 
