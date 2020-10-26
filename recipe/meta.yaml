@@ -1,5 +1,5 @@
 {% set name = "oauthenticator" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ff1b4ba2458a6ee460c3c4161d780a12e94811b2daaa5d13acdb354fa21a9916
+  sha256: 0bc5a4a0ee22689a863090993e0054485030847d0e9884afa1592ca388cccf4a
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install --no-deps . -vv"
+  script: {{ PYTHON }} -m pip install --no-deps . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'OAuth + JupyterHub Authenticator = OAuthenticator'
+  summary: OAuth + JupyterHub Authenticator = OAuthenticator
 
   doc_url: https://jhubdocs.readthedocs.io/en/latest/oauthenticator/
   dev_url: https://github.com/jupyterhub/oauthenticator
