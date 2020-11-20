@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
   run:
-    - python >=3
+    - python >=3.6
     - jupyterhub >=0.5
 
 test:
@@ -28,7 +28,7 @@ test:
 
 about:
   home: https://github.com/jupyterhub/oauthenticator
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: OAuth + JupyterHub Authenticator = OAuthenticator
