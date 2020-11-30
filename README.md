@@ -3,7 +3,7 @@ About oauthenticator
 
 Home: https://github.com/jupyterhub/oauthenticator
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oauthenticator-feedstock/blob/master/LICENSE.txt)
 
