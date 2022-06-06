@@ -19,8 +19,13 @@ requirements:
     - python >=3.6
     - pip
   run:
+    # ref: https://github.com/jupyterhub/oauthenticator/blob/main/setup.py
+    # ref: https://github.com/jupyterhub/oauthenticator/blob/main/requirements.txt
     - python >=3.6
-    - jupyterhub >=0.5
+    - jsonschema
+    - jupyterhub >=1.2
+    - requests
+    - ruamel.yaml
 
 test:
   imports:
