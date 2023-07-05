@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/setup.py
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/requirements.txt
-    - python >=3.6
+    - python >=3.8
     - jsonschema
     - jupyterhub >=1.2
     - requests
