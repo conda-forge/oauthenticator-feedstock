@@ -1,5 +1,5 @@
 {% set name = "oauthenticator" %}
-{% set version = "15.1.0" %}
+{% set version = "16.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1d9873c9b66e1af973291968b9573d25378bd8c647f30d73b8d8fb27b1a0b85
+  sha256: 78d84409ef79ee12614a1bace536bd33cf3bdb06009c64f299d44d4ff7c693f3
 
 build:
   number: 0
@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/setup.py
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/requirements.txt
-    - python >=3.6
+    - python >=3.8
     - jsonschema
     - jupyterhub >=1.2
     - requests
