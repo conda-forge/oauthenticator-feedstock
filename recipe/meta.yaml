@@ -1,5 +1,5 @@
 {% set name = "oauthenticator" %}
-{% set version = "16.2.1" %}
+{% set version = "16.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a89aeb7aad86849c6b5fd91e64e615ce38a1b34442ca669df8c184ad6e5e70f7
+  sha256: 40c75d18951f69f5e80713028e5c75947e396b805a6f700fe23f0fc7b27161a4
 
 build:
   number: 0
@@ -23,9 +23,12 @@ requirements:
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/requirements.txt
     - python >=3.8
     - jsonschema
-    - jupyterhub >=1.2
+    - jupyterhub >=2.2
+    - pyjwt >=2
     - requests
     - ruamel.yaml
+    - tornado
+    - traitlets
 
 test:
   imports:
