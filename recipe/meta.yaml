@@ -12,11 +12,12 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install --no-deps . -vv
+  script: python -m pip install --no-deps . -vv
 
 requirements:
   host:
     - python >=3.8
+    - setuptools
     - pip
   run:
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/setup.py
@@ -40,7 +41,6 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: OAuth + JupyterHub Authenticator = OAuthenticator
-
   doc_url: https://jhubdocs.readthedocs.io/en/latest/oauthenticator/
   dev_url: https://github.com/jupyterhub/oauthenticator
 
