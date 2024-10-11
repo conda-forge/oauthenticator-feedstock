@@ -1,5 +1,5 @@
 {% set name = "oauthenticator" %}
-{% set version = "17.0.0" %}
+{% set version = "17.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1e45f72e23e1ae8601749b264fcbc65c2f890108bbfa3dc18493ef7627e199d
+  sha256: d915acad2f96d3d018f705afbccfe9633b0cd31cea730599612bf8042b1e822c
 
 build:
   number: 0
