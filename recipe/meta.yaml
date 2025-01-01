@@ -10,19 +10,19 @@ source:
   sha256: e5d90cb2411fff3dc6fcc1633468233c0e0e0239422c087c7734d1685055b8f3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/setup.py
     # ref: https://github.com/jupyterhub/oauthenticator/blob/main/requirements.txt
-    - python >=3.8
+    - python >={{ python_min }}
     - jsonschema
     - jupyterhub >=2.2
     - pyjwt >=2
@@ -32,6 +32,8 @@ requirements:
     - traitlets
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - oauthenticator
 
