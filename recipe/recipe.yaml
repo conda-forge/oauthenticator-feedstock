@@ -1,0 +1,53 @@
+schema_version: 1
+
+context:
+  version: "17.4.0"
+
+package:
+  name: oauthenticator
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/o/oauthenticator/oauthenticator-${{ version }}.tar.gz
+  sha256: b1025d725dc406977299c87fedea2006fcabac3bea9d4e17f690d4dad044923e
+
+build:
+  number: 0
+  noarch: python
+  script: python -m pip install --no-deps . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatchling
+    - hatch-requirements-txt
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - jsonschema
+    - jupyterhub >=2.2
+    - pyjwt >=2
+    - requests
+    - ruamel.yaml
+    - tornado
+    - traitlets
+
+tests:
+  - python:
+      imports:
+        - oauthenticator
+      pip_check: false
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: OAuth + JupyterHub Authenticator = OAuthenticator
+  homepage: https://github.com/jupyterhub/oauthenticator
+  repository: https://github.com/jupyterhub/oauthenticator
+  documentation: https://jhubdocs.readthedocs.io/en/latest/oauthenticator/
+
+extra:
+  recipe-maintainers:
+    - ericcina
+    - sodre
+    - consideRatio
