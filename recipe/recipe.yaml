@@ -37,6 +37,7 @@ tests:
       imports:
         - oauthenticator
       pip_check: false
+      python_version: ${{ python_min }}.*
 
 about:
   license: BSD-3-Clause
