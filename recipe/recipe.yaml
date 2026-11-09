@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "17.4.0"
+  version: "17.5.0"
 
 package:
   name: oauthenticator
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/oauthenticator/oauthenticator-${{ version }}.tar.gz
-  sha256: b1025d725dc406977299c87fedea2006fcabac3bea9d4e17f690d4dad044923e
+  sha256: 946377a61e45655c98dc81513c40a1becbd5e28be69c2e9843cf413a3e7438b7
 
 build:
   number: 0
